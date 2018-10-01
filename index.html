@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>SSV Normandy SR1 | React360</title>
+
+    <meta name="description" content="My experiment with React360 rendering a virtual tour of SSV Normandy SR1's command bridge." />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="Starter VTour in SSV Normandy SR1">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="SSV Normandy SR1 with React360" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://masseffect360s.github.io" />
+    <meta property="og:image" content="https://assets.rpgsite.net/images/images/000/041/703/original/me_normandy1.jpg" />
+    <meta property="og:description" content="My experiment with React360 rendering a virtual tour of SSV Normandy SR1's command bridge." />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@m4rkh3r4m15">
+    <meta name="twitter:title" content="SSV Normandy SR1 with React360">
+    <meta name="twitter:description" content="My experiment with React360 rendering a virtual tour of SSV Normandy SR1's command bridge.">
+    <meta name="twitter:creator" content="@m4rkh3r4m15">
+    <-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="https://assets.rpgsite.net/images/images/000/041/703/original/me_normandy1.jpg">
+
+
+    <style>body { margin: 0; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <!-- Attachment point for your app -->
+    <div id="container"></div>
+    <script src="./client.bundle?platform=vr"></script>
+    <script>
+      // Initialize the React 360 application
+      React360.init(
+        'index.bundle?platform=vr&dev=true',
+        document.getElementById('container'),
+        {
+          assetRoot: 'static_assets/',
+        }
+      );
+    </script>
+  </body>
+</html>
+
